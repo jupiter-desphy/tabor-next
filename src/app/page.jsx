@@ -6,16 +6,16 @@ import WhoWeAre from './components/WhoWeAre';
 import Reviews from './components/Reviews';
 import Services from './components/Services';
 import Marquee from './components/Marquee';
+// import Navbar from './components/Navbar';
 
 import desktopImage from './images/barbershop169.jpeg';
-// import mobileImage from './images/barbershop169.jpeg';
 import mobileImage from './images/barbershop5-4.jpeg';
 
 const Landing = () => {
   const [bgImage, setBgImage] = useState(null);
 
   useEffect(() => {
-    setBgImage(window.innerWidth > window.innerHeight ? desktopImage : mobileImage);
+    setBgImage(window.innerWidth > window.innerHeight ? desktopImage.src : mobileImage.src);
   }, []);
   
 
