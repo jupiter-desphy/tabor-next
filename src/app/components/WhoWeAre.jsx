@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Staff from '../components/Staff';
 import PortraitAlbum from '../components/PortraitAlbum';
 import landscapeImage from '../images/grandpas-barbershop-239-100.jpeg';
@@ -15,13 +16,19 @@ export default function WhoWeAre() {
 
     return (
         <div className='about'>
-            <picture className="hero">
+            {/* <picture className="hero">
                 <source srcSet={landscapeImage}
                     media="(orientation: landscape)" />
                 <source srcSet={portraitImage}
-                    media="(orientation: portrait)" />
-                <img src={landscapeImage} alt="grandpa's barbershop with barbers and community lined up behind child getting hair cut." width='100%' />
-            </picture>
+                    media="(orientation: portrait)" /> */}
+                <Image
+                    src={landscapeImage}
+                    alt="grandpa's barbershop with barbers and community lined up behind child getting hair cut."
+                    layout='intrinsic'
+                    width={11328}
+                    height={4740}
+                    loading='lazy' />
+            {/* </picture> */}
             <h1>WHO WE ARE</h1>
             <div className=''>
                 <p>

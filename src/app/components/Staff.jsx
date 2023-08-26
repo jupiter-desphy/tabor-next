@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Tony from '../images/tony.jpg';
 import MrTony from '../images/mr-tony.jpg';
 import Sabastian from '../images/sabastian.jpg';
@@ -15,10 +16,13 @@ export default function Staff() {
         <div className="staff">
             <div className="person">
                 <a href={onClickTony} className="container">
-                    <img
+                    <Image
                         className="circle"
                         src={Tony}
+                        width={540}
+                        height={540}
                         alt='Barber 1'
+                        layout='intrinsic'
                     />
                 </a>
                 <div className="divider"></div>
@@ -27,10 +31,13 @@ export default function Staff() {
             </div>
             <div className="person">
                 <a href={onClickMrTony} className="container">
-                    <img
+                    <Image
                         className="circle"
                         src={MrTony}
                         alt='Barber 2'
+                        width={360}
+                        height={360}
+                        layout='intrinsic'
                     />
                 </a>
                 <div className="divider"></div>
@@ -39,10 +46,13 @@ export default function Staff() {
             </div>
             <div className="person">
                 <a href={onClickSebastian} className="container">
-                    <img
+                    <Image
                         className="circle"
                         src={Sabastian}
                         alt='Barber 3'
+                        width={540}
+                        height={540}
+                        layout='intrinsic'
                     />
                 </a>
                 <div className="divider"></div>

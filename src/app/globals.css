@@ -13,7 +13,9 @@
   --serif: Century, 'Times New Roman', Times, serif;
   --header-height: 4.5em;
 }
-
+/* .hero {
+  position: absolute;
+} */
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
