@@ -22,7 +22,9 @@ export default function Staff() {
                         width={540}
                         height={540}
                         alt='Barber 1'
-                        layout='intrinsic'
+                        style={
+                            width=
+                        }
                     />
                 </a>
                 <div className="divider"></div>

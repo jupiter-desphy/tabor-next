@@ -8,7 +8,7 @@ import Services from './components/Services';
 import Marquee from './components/Marquee';
 // import Navbar from './components/Navbar';
 
-import desktopImage from './images/barbershop169.jpeg';
+import desktopImage from './images/barbershop1920-1080.jpeg';
 import mobileImage from './images/barbershop5-4.jpeg';
 
 const Landing = () => {
