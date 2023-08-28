@@ -22,9 +22,10 @@ export default function Staff() {
                         width={540}
                         height={540}
                         alt='Barber 1'
-                        style={
-                            width=
-                        }
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                     />
                 </a>
                 <div className="divider"></div>
@@ -39,7 +40,10 @@ export default function Staff() {
                         alt='Barber 2'
                         width={360}
                         height={360}
-                        layout='intrinsic'
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                     />
                 </a>
                 <div className="divider"></div>
@@ -54,7 +58,10 @@ export default function Staff() {
                         alt='Barber 3'
                         width={540}
                         height={540}
-                        layout='intrinsic'
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
                     />
                 </a>
                 <div className="divider"></div>

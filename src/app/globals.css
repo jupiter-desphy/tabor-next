@@ -147,8 +147,8 @@ td {
 .hero-container {
   padding-top: calc(100vh - var(--header-height) - var(--header-height));
   margin-top: var(--header-height);
-  background-size: cover;
-  background-position: bottom right;
+  /* background-size: cover;
+  background-position: bottom right; */
 }
 #book,
 #call,
@@ -176,6 +176,14 @@ td {
   height: var(--header-height);
   background-color: #fff;
 }
+
+/* - - - - - - - - - - BACKGROUND - - - - - - - - - - */
+
+.image-container{
+  /* position: relative; */
+
+}
+
 
 /* - - - - - - - - - - MARQUEE - - - - - - - - - - */
 
@@ -456,6 +464,9 @@ cite {
   }
   .hero-container {
     padding-top: 45vh;
+  }
+  .hero-image{
+    z-index: -1;
   }
   .marquee-left {
     -moz-animation: 24s scroll-left linear infinite;

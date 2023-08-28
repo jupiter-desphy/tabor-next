@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Hours from './components/Hours';
 import Address from './components/Address';
 import WhoWeAre from './components/WhoWeAre';
@@ -8,35 +9,70 @@ import Services from './components/Services';
 import Marquee from './components/Marquee';
 // import Navbar from './components/Navbar';
 
-import desktopImage from './images/barbershop1920-1080.jpeg';
-import mobileImage from './images/barbershop5-4.jpeg';
+import desktopImage from './images/barbershop1920-1080.webp';
+import mobileImage from './images/barbershop1530-1913.webp';
 
 const Landing = () => {
-  const [bgImage, setBgImage] = useState(null);
+  const [landscape, setLandscape] = useState(null);
+  const bg = landscape ? desktopImage : mobileImage;
 
   useEffect(() => {
-    setBgImage(window.innerWidth > window.innerHeight ? desktopImage.src : mobileImage.src);
+    setLandscape(window.innerWidth > window.innerHeight);
   }, []);
-  
+
 
   return (
     <>
-      <div className="hero-container" style={{ backgroundImage: `url(${bgImage})` }}>
+      <div className="hero-container"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '100% 100%'}}
+      >
+        {/* {
+          landscape ?
+            <Image
+            src={desktopImage}
+            alt=''
+            className='hero-image'
+            placeholder='blur'
+            style={{
+              zIndex: "-9999",
+              objectFit: 'cover',
+              objectPosition: 'bottom-right'
+            }}
+            fill
+            />
+          :
+            <Image
+              src={mobileImage}
+              alt=''
+              className='hero-image'
+              placeholder='blur'
+              style={{
+                zIndex: "-9999",
+                objectFit: 'cover',
+                objectPosition: 'bottom-right',
+                width: '100vw',
+                height: 'auto'
+              }}
+            />
+          } */}
 
-      </div>
-      <div className='columns'>
-        <div className="west-side" >
-          <a href='tel:9718884133' id='call'>
-            Call 971-888-4133
-          </a>
         </div>
-          <Address />
-        <div className='east-side'>
-          <div>
-          {/* <h3 className="shown">HOURS</h3> */}
-          <Hours />
+          <div className='columns'>
+            <div className="west-side" >
+              <a href='tel:9718884133' id='call'>
+                Call 971-888-4133
+              </a>
+            </div>
+            <Address />
+            <div className='east-side'>
+              <div>
+              {/* <h3 className="shown">HOURS</h3> */}
+              <Hours />
+            </div>
           </div>
-        </div>
       </div>
 
       <Marquee hrefURl={'https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland'}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Staff from '../components/Staff';
 import PortraitAlbum from '../components/PortraitAlbum';
-import landscapeImage from '../images/grandpas-barbershop-239-100.jpeg';
+import landscapeImage from '../images/grandpas-barbershop-1920-803.webp';
 import portraitImage from '../images/grandpas-barbershop.jpeg';
 
 
@@ -24,10 +24,13 @@ export default function WhoWeAre() {
                 <Image
                     src={landscapeImage}
                     alt="grandpa's barbershop with barbers and community lined up behind child getting hair cut."
-                    layout='intrinsic'
                     width={11328}
                     height={4740}
-                    loading='lazy' />
+                    style={{
+                        width: '100%',
+                        height: 'auto'
+                    }}
+                />
             {/* </picture> */}
             <h1>WHO WE ARE</h1>
             <div className=''>
