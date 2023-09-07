@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
+// import { NavLink } from 'react-router-dom';
 import { Pivot as Hamburger } from 'hamburger-react'
 import logo from '../images/taboroutlineblack.png';
 export default function Navbar() {
@@ -18,9 +20,9 @@ export default function Navbar() {
                 <nav className='west-side'>
                     <ul id={showLinks ? "show-links" : ""} className='primary-navigation flex'>
                         <li className='shown'>
-                            <NavLink to={"/"} onClick={() => setShowLinks(false)}>
+                            <Link href={"/"} onClick={() => setShowLinks(false)}>
                                 HOME
-                            </NavLink>
+                            </Link>
                         </li>
                         <li className='shown'>
                             <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
@@ -28,9 +30,9 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/about"} onClick={toggleNav}>
+                            <Link href='../about' onClick={toggleNav}>
                                 ABOUT
-                            </NavLink>
+                            </Link>
                         </li>
                         <li>
                             <a href='https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland' target='_blank' rel='noReferrer' >
@@ -38,22 +40,32 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <NavLink to={"/reviews"} onClick={() => setShowLinks(false)}>
+                            <Link href='../reviews' onClick={() => setShowLinks(false)}>
                                 REVIEWS
-                            </NavLink>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
 
 
-                <NavLink to={"/"}>
+                <Link href={"/"}>
                     <h4 className='logo'>
-                        <img src={logo} alt='Tabor Logo' height='40em' />
+                        <Image 
+                            src={logo}
+                            alt='Tabor Logo'
+                            width={4319}
+                            height={1695}
+                            style={{
+                                width: '6em',
+                                height: '2.35em'
+                            }}
+                        />
+                        {/* <img src={logo} alt='Tabor Logo' height='40em' /> */}
                         <div>
                             BARBER SHOP
                         </div>
                     </h4>
-                </NavLink>
+                </Link>
 
 
 
