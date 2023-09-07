@@ -1,7 +1,8 @@
-'use client';
+// 'use client';
 import React from 'react';
 import Image from 'next/image';
-import Carousel from '../components/Carousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import image1 from '../images/mr-tony-tony.webp';
 import image2 from '../images/stuffed-horse-haircut-4-3.webp';
 
@@ -20,7 +21,7 @@ export default function Reviews() {
 
   return (
     <div className='portrait-album'>
-      {/* <Carousel> */}
+      <Carousel>
         <Image
           src={image1}
           alt="Third generation barber cutting his son's hair as a kid who's now himself the barber / owner of Tabor Barbershop."
@@ -44,7 +45,7 @@ export default function Reviews() {
 
         {/* <img src={image1} alt="Third generation barber cutting his son's hair as a kid who's now himself the barber / owner of Tabor Barbershop." width='100%' />
         <img src={image2} alt="Tony (4th gen barber) as a child cutting his stuffed horse's hair with an audience of all his other stuffed animals." width='100%' /> */}
-      {/* </Carousel> */}
+      </Carousel>
     </div>
   );
 }

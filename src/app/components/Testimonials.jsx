@@ -1,7 +1,9 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
+// import Carousel from '../components/Carousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-export default function Reviews() {
+export default function Testimonials() {
     
     return (
         <div className='reviews'>
@@ -55,6 +57,8 @@ export default function Reviews() {
         </div>
     );
 }
+
+// export default Testimonials;
 //         <div className='reviews'>
 //             <div className='review' >
 

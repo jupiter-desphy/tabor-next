@@ -1,8 +1,10 @@
 import React from 'react';
 import WhoWeAre from '../../components/WhoWeAre';
 
-export const About = () => {
+const About = () => {
   return (
     <WhoWeAre />
   )
 }
+
+export default About;

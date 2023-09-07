@@ -30,7 +30,7 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <Link href='../about' onClick={toggleNav}>
+                            <Link href='../pages/about' onClick={toggleNav}>
                                 ABOUT
                             </Link>
                         </li>
@@ -40,7 +40,7 @@ export default function Navbar() {
                             </a>
                         </li>
                         <li>
-                            <Link href='../reviews' onClick={() => setShowLinks(false)}>
+                            <Link href='../pages/reviews' onClick={() => setShowLinks(false)}>
                                 REVIEWS
                             </Link>
                         </li>
