@@ -55,6 +55,7 @@ export default function Navbar() {
                             alt='Tabor Logo'
                             width={4319}
                             height={1695}
+                            placeholder='blur'
                             style={{
                                 width: '6em',
                                 height: '2.35em'

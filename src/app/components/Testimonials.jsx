@@ -3,7 +3,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-export default function Testimonials() {
+function Testimonials() {
     
     return (
         <div className='reviews'>
@@ -58,7 +58,7 @@ export default function Testimonials() {
     );
 }
 
-// export default Testimonials;
+export default Testimonials;
 //         <div className='reviews'>
 //             <div className='review' >
 

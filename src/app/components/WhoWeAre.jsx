@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Staff from '../components/Staff';
-import PortraitAlbum from '../components/PortraitAlbum';
+// import PortraitAlbum from '../components/PortraitAlbum';
 import landscapeImage from '../images/grandpas-barbershop-1920-803.webp';
 import portraitImage from '../images/grandpas-barbershop.jpeg';
 
@@ -26,8 +26,9 @@ export default function WhoWeAre() {
                 <Image
                     src={landscapeImage}
                     alt="grandpa's barbershop with barbers and community lined up behind child getting hair cut."
-                    width={11328}
-                    height={4740}
+                    width={1920}
+                    height={803}
+                    sizes='100vw'
                     style={{
                         width: '100%',
                         height: 'auto'
@@ -44,7 +45,7 @@ export default function WhoWeAre() {
                 </p>
             </div>
             <Staff />
-            {portrait && <PortraitAlbum />}
+            {/* {portrait && <PortraitAlbum />} */}
         </div>
     )
 }

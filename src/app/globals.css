@@ -324,7 +324,7 @@ blockquote {
   font-size: clamp(1.2rem, 50%, 3rem);
 }
 figcaption {
-  padding: 1rem;
+  padding: 3rem;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8rem;
@@ -348,6 +348,8 @@ cite {
   font-size: 1.4rem;
   letter-spacing: .03rem;
 }
+
+
 
 /* - - - - - - - - - - SERVICES MENU - - - - - - - - - - */
 

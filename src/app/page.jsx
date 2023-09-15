@@ -1,31 +1,38 @@
-'use client';
-import React, { useState, useEffect } from 'react';
+// 'use client';
+// import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Hours from './components/Hours';
 import Address from './components/Address';
-import WhoWeAre from './components/WhoWeAre';
-import Testimonials from './components/Testimonials';
+// import WhoWeAre from './components/WhoWeAre';
+// import Testimonials from './components/Testimonials';
 import Services from './components/Services';
 import Marquee from './components/Marquee';
 // import Navbar from './components/Navbar';
 
 import desktopImage from './images/barbershop1920-1080.webp';
 import mobileImage from './images/barbershop1530-1913.webp';
+import dynamic from 'next/dynamic';
+
+const DynamicWhoWeAre = dynamic(() => import('./components/WhoWeAre'), {
+  ssr: false,
+});
 
 const Landing = () => {
-  const [landscape, setLandscape] = useState(null);
-  const bg = landscape ? desktopImage : mobileImage;
+  // const [landscape, setLandscape] = useState(null);
+  // const bg = landscape ? desktopImage : mobileImage;
 
-  useEffect(() => {
-    setLandscape(window.innerWidth > window.innerHeight);
-  }, []);
+  // useEffect(() => {
+  //   setLandscape(window.innerWidth > window.innerHeight);
+  // }, []);
 
 
   return (
     <>
       <div className="hero-container"
       style={{
-        backgroundImage: `url(${bg.src})`,
+        // backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url(${desktopImage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: '100% 100%'}}
       >
@@ -79,8 +86,9 @@ const Landing = () => {
         leftText={'Kids, senior & military discounts!'}
         rightText={'Walk-ins welcome!'} />
       <br />
-      <WhoWeAre />
-      <Testimonials />
+      <DynamicWhoWeAre />
+      {/* <WhoWeAre /> */}
+      {/* <Testimonials /> */}
       <Services />
     </>
   )

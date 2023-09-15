@@ -3,14 +3,14 @@ import Image from 'next/image';
 import Tony from '../images/tony.jpg';
 import MrTony from '../images/mr-tony.jpg';
 import Sabastian from '../images/sabastian.jpg';
+import Brian from '../images/brian.png'
 
 export default function Staff() {
 
     const onClickTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669506#ba_s=bd_1');
-
     const onClickMrTony = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/669505#ba_s=bd_1');
-
     const onClickSebastian = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/746316#ba_s=bd_1');
+    const onClickBrian = ('https://booksy.com/en-us/720068_tabor-barbershop_barber-shop_134776_portland/staffer/966764#ba_s=bd_1');
 
     return (
         <div className="staff">
@@ -30,7 +30,7 @@ export default function Staff() {
                 </a>
                 <div className="divider"></div>
                 <div className="name">Tony</div>
-                <div className="title">Tuesday - Saturday</div>
+                <div className="title">Friday - Monday</div>
             </div>
             <div className="person">
                 <a href={onClickMrTony} className="container">
@@ -67,6 +67,24 @@ export default function Staff() {
                 <div className="divider"></div>
                 <div className="name">Sabastian</div>
                 <div className="title">Sunday - Wednesday</div>
+            </div>
+            <div className="person">
+                <a href={onClickBrian} className="container">
+                    <Image
+                        className="circle"
+                        src={Brian}
+                        alt='Barber 4'
+                        width={360}
+                        height={360}
+                        style={{
+                            width: '100%',
+                            height: 'auto'
+                        }}
+                    />
+                </a>
+                <div className="divider"></div>
+                <div className="name">Brian</div>
+                <div className="title">Tuesday - Friday</div>
             </div>
         </div>
     )
