@@ -1,4 +1,10 @@
-@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-std");
+/* @import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-std"); */
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  src: url('./fonts/Inter-Black.woff') format('woff');
+}
 
 
 :root {
@@ -9,7 +15,7 @@
   --soft-grey-background: rgb(242, 241, 241);
   --tan-background: #ebe7df;
   --background-dark: #1b1d21;
-  --sans-serif: "Neue Haas Grotesk Text Std", Helvetica, Arial, sans-serif;
+  --sans-serif: "Inter", Helvetica, Arial, sans-serif;
   --serif: Century, 'Times New Roman', Times, serif;
   --header-height: 4.5em;
 }

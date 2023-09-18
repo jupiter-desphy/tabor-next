@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 // import React, { useState, useEffect } from 'react';
 import React from 'react';
 import Image from 'next/image';
@@ -6,6 +6,7 @@ import Hours from './components/Hours';
 import Address from './components/Address';
 // import WhoWeAre from './components/WhoWeAre';
 // import Testimonials from './components/Testimonials';
+import Testimonials from './components/Testimonials';
 import Services from './components/Services';
 import Marquee from './components/Marquee';
 // import Navbar from './components/Navbar';
@@ -88,7 +89,7 @@ const Landing = () => {
       <br />
       <DynamicWhoWeAre />
       {/* <WhoWeAre /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Services />
     </>
   )
