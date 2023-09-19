@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Staff from '../components/Staff';
 // import PortraitAlbum from '../components/PortraitAlbum';
 import landscapeImage from '../images/grandpas-barbershop-1920-803.webp';
-import portraitImage from '../images/grandpas-barbershop.jpeg';
 
 
 export default function WhoWeAre() {
@@ -38,7 +37,7 @@ export default function WhoWeAre() {
             <h1>WHO WE ARE</h1>
             <div className=''>
                 <p>
-                    As third and fourth generation barbers, we're a father and son team with over 100 years of experience in the family name.
+                    As third and fourth generation barbers, we&apos;re a father and son team with over 100 years of experience in the family name.
                 </p>
                 <p>
                     We offer precision haircuts, beard trims, and hot towel shaves as well as a wide variety of classic scissor and clipper haircuts that will have you feeling brand new.

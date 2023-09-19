@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 // import { NavLink } from 'react-router-dom';
 import { Pivot as Hamburger } from 'hamburger-react'
-import logo from '../images/taboroutlineblack.png';
+import logo from '../images/taboroutlineblack.webp';
 export default function Navbar() {
 
     const [showLinks, setShowLinks] = useState(false);

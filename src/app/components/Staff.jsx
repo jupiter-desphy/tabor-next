@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Tony from '../images/tony.jpg';
-import MrTony from '../images/mr-tony.jpg';
-import Sabastian from '../images/sabastian.jpg';
+import Tony from '../images/tony.webp';
+import MrTony from '../images/mr-tony.webp';
+import Sabastian from '../images/sabastian.webp';
 import Brian from '../images/brian.png'
 
 export default function Staff() {
