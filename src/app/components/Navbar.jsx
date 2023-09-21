@@ -70,7 +70,7 @@ export default function Navbar() {
 
 
 
-                <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks} >
+                <button onClick={toggleNav} className='mobile-nav-toggle' aria-controls='primary-navigation' data-visible="false" aria-expanded={showLinks} aria-label='menu button' >
                     <Hamburger toggled={showLinks} size={26} color="#141414"  />
                     <span className='sr-only'>Menu</span>
                 </button>
